@@ -1,3 +1,5 @@
+import org.apache.commons.collections4.TrieUtils;
+
 public class CharTets {
 
 
@@ -46,5 +48,7 @@ public class CharTets {
 
 
         System.out.println(1|1021|3);
+
+//        TrieUtils.unmodifiableTrie()
     }
 }

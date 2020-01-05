@@ -28,4 +28,6 @@ hs_err_pid*
 /out/
 /jmh/target/
 /META-INF/
-/AmazingJava.iml
+*.iml
+*/*.iml
+*/target
