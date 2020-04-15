@@ -28,7 +28,7 @@ hs_err_pid*
 /out/
 /jmh/target/
 /META-INF/
-*.iml
 */*.iml
 */target
 /unsafe/unsafe.iml
+**/*.iml
