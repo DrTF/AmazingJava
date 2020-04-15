@@ -30,7 +30,7 @@ import java.io.InputStreamReader;
 
 public final class LocalEcho {
 
-    static final String PORT = System.getProperty("port", "test_port");
+    static final String PORT = System.getProperty("port", "12345");
 
     public static void main(String[] args) throws Exception {
         // Address to bind on / connect to.

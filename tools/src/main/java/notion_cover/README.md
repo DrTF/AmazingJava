@@ -1,1 +1,0 @@
-使用[google配色](https://www.duzhiqiang.com/archives/330), 生成notion博客封面

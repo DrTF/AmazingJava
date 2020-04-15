@@ -35,9 +35,11 @@ public final class UptimeClient {
     static final String HOST = System.getProperty("host", "127.0.0.1");
     static final int PORT = Integer.parseInt(System.getProperty("port", "8080"));
     // Sleep 5 seconds before a reconnection attempt.
-    static final int RECONNECT_DELAY = Integer.parseInt(System.getProperty("reconnectDelay", "5"));
+    // 重发 10分钟
+    static final int RECONNECT_DELAY = Integer.parseInt(System.getProperty("reconnectDelay", "600"));
     // Reconnect when the server sends nothing for 10 seconds.
-    private static final int READ_TIMEOUT = Integer.parseInt(System.getProperty("readTimeout", "10"));
+    // 重连 15分钟
+    private static final int READ_TIMEOUT = Integer.parseInt(System.getProperty("readTimeout", "15*60"));
 
     private static final UptimeClientHandler handler = new UptimeClientHandler();
     private static final Bootstrap bs = new Bootstrap();

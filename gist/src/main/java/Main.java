@@ -1,4 +1,3 @@
-import jdk.internal.jline.internal.Nullable;
 
 import java.lang.ref.Reference;
 import java.lang.ref.ReferenceQueue;
@@ -146,7 +145,7 @@ public class Main{
         byte[] mega = new byte[1000];
         private HeavyList next = null;
 
-        public HeavyList(int number, @Nullable HeavyList prev) {
+        public HeavyList(int number, HeavyList prev) {
             for (int i = 0; i < mega.length; i++) {
                 mega[i] = (byte) (number % 256);
             }
